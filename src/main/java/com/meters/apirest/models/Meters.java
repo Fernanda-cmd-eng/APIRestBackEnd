@@ -30,7 +30,7 @@ public class Meters implements Serializable {
 	@Column(name="model")
 	private String model;
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 

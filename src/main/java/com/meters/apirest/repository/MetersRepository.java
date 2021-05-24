@@ -6,5 +6,5 @@ import com.meters.apirest.models.Meters;
 
 public interface MetersRepository extends JpaRepository<Meters, Long> {
 
-	Meters findById(long id);
+	Meters findById(int id);
 }

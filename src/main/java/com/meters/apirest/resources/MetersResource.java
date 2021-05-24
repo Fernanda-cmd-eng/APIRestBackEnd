@@ -36,7 +36,7 @@ public class MetersResource {
 
 	@ApiOperation(value = "Retorna um unico medidor")
 	@GetMapping("/meters/{id}")
-	public Meters listaMetersUnico(@PathVariable(value = "id") long id) {
+	public Meters listaMetersUnico(@PathVariable(value = "id") int id) {
 		return metersRepository.findById(id);
 	}
 
@@ -45,10 +45,10 @@ public class MetersResource {
 	public Meters salvaMeters(@RequestBody Meters meters) {
 		return metersRepository.save(meters);
 	}
-
+	
 	@ApiOperation(value = "Deleta um medidor")
 	@DeleteMapping("/meters")
-	public void deletaMeters(@RequestBody Meters meters) {
+	public void deleteMeters(@RequestBody Meters meters) {
 		metersRepository.delete(meters);
 	}
 
