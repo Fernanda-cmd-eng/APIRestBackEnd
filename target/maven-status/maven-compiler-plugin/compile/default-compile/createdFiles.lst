@@ -1,0 +1,5 @@
+com\meters\apirest\repository\MetersRepository.class
+com\meters\apirest\models\Meters.class
+com\meters\apirest\resources\MetersResource.class
+com\meters\apirest\ApirestApplication.class
+com\meters\apirest\config\SwaggerConfig.class
